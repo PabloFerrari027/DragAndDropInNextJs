@@ -1,4 +1,8 @@
 # Drag And Drop In NextJs
+
+
+<img src="https://github.com/PabloFerrari013/DragAndDropInNextJs/blob/main/public/gif/desktop.gif" width="480px"/>
+
 ---
 
 ## 🧪 Technologies used
