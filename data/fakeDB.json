@@ -1,21 +1,21 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "name": "Psyduck",
     "avatarURL": "https://assets.pokemon.com/assets/cms2/img/pokedex/full//054.png"
   },
   {
-    "id": 2,
+    "id": 1,
     "name": "Grimer",
     "avatarURL": "https://assets.pokemon.com/assets/cms2/img/pokedex/full//088.png"
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Numel",
     "avatarURL": "https://assets.pokemon.com/assets/cms2/img/pokedex/full//322.png"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "gurdurr",
     "avatarURL": "https://assets.pokemon.com/assets/cms2/img/pokedex/full//533.png"
   }

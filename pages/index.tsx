@@ -33,6 +33,7 @@ const Home: NextPage = () => {
 
     const items = Array.from(pokemons)
     const [reorderedItem] = items.splice(result.source.index, 1)
+
     items.splice(result.destination.index, 0, reorderedItem)
 
     setPokemons(items)
@@ -41,16 +42,19 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div>
+        <h1>
+          Drag and Drop in <strong>Next.JS</strong>
+        </h1>
         {read && (
           <DragDropContext onDragEnd={handleOnDragEnd}>
             <Droppable droppableId="pokemons">
               {provided => (
                 <ul {...provided.droppableProps} ref={provided.innerRef}>
-                  {pokemons.map(item => (
+                  {pokemons.map((item, index) => (
                     <Draggable
                       key={item.id}
-                      draggableId={item.id.toString()}
-                      index={item.id}
+                      draggableId={item.name}
+                      index={index}
                     >
                       {provided => (
                         <li
@@ -75,6 +79,8 @@ const Home: NextPage = () => {
                       )}
                     </Draggable>
                   ))}
+
+                  {provided.placeholder}
                 </ul>
               )}
             </Droppable>
